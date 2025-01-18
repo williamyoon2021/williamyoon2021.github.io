@@ -1,0 +1,20 @@
+{%- set colocated_path = page.colocated_path | default(value="") -%}
+{%- set relative_path = colocated_path ~ path -%}
+{%- set image_path = relative_path -%}
+{% set image = resize_image(path=image_path, width=width, height=height, op=op) %}
+
+
+<style nonce="aghtry">
+	.center{ text-align: center; }
+</style>
+
+<div class="center">
+<figure>
+<img src="{{ image.url }}"/>
+<figcaption> 
+	{% if body %}
+	{{body | safe}} 
+	{% endif %}
+</figcaption>
+</figure>
+</div>
