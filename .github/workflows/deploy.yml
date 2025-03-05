@@ -29,6 +29,3 @@ jobs:
           git config --global user.name "GitHub Actions"
           cp -r public/* .
           touch .nojekyll
-          git add .
-          git commit -m "Deploy site"
-          git push origin main
