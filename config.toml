@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://williamyoon2021.github.io/"
+base_url = "https://williamyoon2021.github.io"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -8,33 +8,39 @@ compile_sass = true
 build_search_index = false
 
 title = "William Yoon"
-description = "William's personal website"
+description = "William Yoon's personal website."
+
+theme = "tabi"
 
 [markdown]
+# Whether to do syntax highlighting
 highlight_code = true
 highlight_theme = "kronuz"
 smart_punctuation = true
 
 [extra]
-# Put all your custom variables here
+# Theme customization
 skin = "mint"
-browser_theme_color = ["#00b86e", "#00804d"]
+browser_theme_color = ["#4299e1", "#2b6cb0"]
 favicon = "favicon.ico"
 
-# Nav Menu
+# Navigation Menu
 menu = [
-    { name = "About me", url = "about", trailing_slash = true },
-    { name = "Research", url = "research", trailing_slash = true},
-    { name = "Projects", url = "projects", trailing_slash = true },
-    { name = "Resume", url = "resume", trailing_slash = true },
+    { name = "Home", url = "/", trailing_slash = false },
+    { name = "About", url = "/about/", trailing_slash = true },
+    { name = "Projects", url = "/projects/", trailing_slash = true },
+    { name = "Research", url = "/research/", trailing_slash = true },
+    { name = "Resume", url = "/resume/", trailing_slash = true },
 ]
 
 # Footer socials
 socials = [
-    { name = "github", url = "https://github.com/williamyoon2021/", icon = "github" },
-    { name = "linkedin", url = "https://www.linkedin.com/in/william-yoon/", icon = "linkedin" },
+    { name = "GitHub", url = "https://github.com/williamyoon2021" },
+    { name = "LinkedIn", url = "https://www.linkedin.com/in/william-yoon-2021/" },
+    { name = "Email", url = "mailto:williamyoon2021@gmail.com" },
 ]
 
+# Security headers
 allowed_domains = [
     { directive = "font-src", domains = ["'self'", "data:"] },
     { directive = "img-src", domains = ["'self'", "https://*", "data:"] },

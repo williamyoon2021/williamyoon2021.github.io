@@ -1,0 +1,7 @@
+{%- if config.extra.allowed_domains -%}
+    {%- set csp_directives = [] -%}
+    {%- for domain in config.extra.allowed_domains -%}
+        {%- set_global csp_directives = csp_directives | concat(with=domain.directive ~ " " ~ domain.domains | join(" ")) -%}
+    {%- endfor -%}
+    <meta http-equiv="Content-Security-Policy" content="{{ csp_directives | join("; ") }}">
+{%- endif -%} 
