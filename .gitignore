@@ -6,9 +6,9 @@ robots.txt
 zola
 sitemap.xml
 .github/workflows/deploy.yml
-about/index.html
-research/index.html
-projects/index.html
-resume/index.html
+about/
+research/
+projects/
+resume/
 index.html
 
