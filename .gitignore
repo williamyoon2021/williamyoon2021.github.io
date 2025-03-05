@@ -1,5 +1,8 @@
-.DS_Store
+# Ignore build output
 public/
+__pycache__/
+*.pyc
+.DS_Store
 .nojekyll
 404.html
 robots.txt
