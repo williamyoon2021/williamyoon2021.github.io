@@ -1,7 +1,0 @@
-{%- set colocated_path = page.colocated_path | default(value="") -%}
-{%- set relative_path = colocated_path ~ src -%}
-{%- set image_path = relative_path -%}
-
-<video autoplay loop muted src="{{ get_url(path=image_path) }}">
- {{ alt }}
-</video>
