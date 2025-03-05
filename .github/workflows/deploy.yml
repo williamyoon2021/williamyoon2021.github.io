@@ -25,9 +25,12 @@ jobs:
       - name: Build and Deploy
         run: |
           zola build
-          cp -r public/* .
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
+          git checkout --orphan gh-pages
+          git rm -rf .
+          cp -r public/* .
+          touch .nojekyll
           git add .
           git commit -m "Deploy site"
-          git push origin HEAD:gh-pages --force
+          git push origin gh-pages --force
