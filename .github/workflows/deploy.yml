@@ -22,11 +22,11 @@ jobs:
           curl -L https://github.com/getzola/zola/releases/download/v0.18.0/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz | tar xzf -
           echo "$PWD" >> $GITHUB_PATH
 
-      - name: Build and Deploy
-        run: |
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "GitHub Actions"
-          touch .nojekyll
-          git add .
-          git commit -m "Deploy site"
-          git push origin main
+      # - name: Build and Deploy
+      #   run: |
+      #     git config --global user.email "github-actions@github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     touch .nojekyll
+      #     git add .
+      #     git commit -m "Deploy site"
+      #     git push origin main
