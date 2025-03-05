@@ -27,10 +27,10 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Zola
-        uses: getzola/zola-action@v1.1.0
-        with:
-          version: 0.18.0
+      - name: Install Zola
+        run: |
+          curl -L https://github.com/getzola/zola/releases/download/v0.18.0/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz | tar xzf -
+          echo "$PWD" >> $GITHUB_PATH
 
       - name: Build with Zola
         run: zola build
