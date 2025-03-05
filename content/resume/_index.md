@@ -29,4 +29,8 @@ You can download my resume in PDF format:
 
 ---
 
-[Back to Home](/) 
+## Navigation
+- [Home](/)
+- [Projects](/projects)
+- [Research](/research)
+- [Resume](/resume) 

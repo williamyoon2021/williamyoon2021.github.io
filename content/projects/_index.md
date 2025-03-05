@@ -20,4 +20,8 @@ Brief description of your third project.
 
 ---
 
-[Back to Home](/) 
+## Navigation
+- [Home](/)
+- [Projects](/projects)
+- [Research](/research)
+- [Resume](/resume) 

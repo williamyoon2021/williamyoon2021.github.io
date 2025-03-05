@@ -25,4 +25,8 @@ Here are my research interests and publications:
 
 ---
 
-[Back to Home](/) 
+## Navigation
+- [Home](/)
+- [Projects](/projects)
+- [Research](/research)
+- [Resume](/resume) 
