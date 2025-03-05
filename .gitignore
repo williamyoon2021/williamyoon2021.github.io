@@ -1,10 +1,8 @@
 .DS_Store
 public/
-.nojekyll
-404.html
-robots.txt
-zola
-sitemap.xml
+# robots.txt
+# zola
+# sitemap.xml
 # about/index.html
 # research/index.html
 # projects/index.html
