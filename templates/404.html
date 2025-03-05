@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{%- block main_content %}
+<div class="page-content">
+    {{ macros::page_header(title="404 - Page Not Found") }}
+    <p>Sorry, the page you're looking for doesn't exist.</p>
+    <p><a href="/">Return to Home</a></p>
+</div>
+{%- endblock main_content %} 
