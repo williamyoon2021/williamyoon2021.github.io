@@ -1,0 +1,14 @@
+.DS_Store
+public/
+.nojekyll
+404.html
+robots.txt
+zola
+sitemap.xml
+.github/workflows/deploy.yml
+about/
+research/
+projects/
+resume/
+index.html
+
