@@ -9,7 +9,6 @@ build_search_index = false
 
 title = "William Yoon"
 description = "William's personal website"
-theme = "tabi"
 
 [markdown]
 highlight_code = true
