@@ -26,6 +26,8 @@ jobs:
         run: |
           zola build
           cp -r public/* .
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
           git add .
           git commit -m "Deploy site"
           git push origin HEAD:gh-pages --force
