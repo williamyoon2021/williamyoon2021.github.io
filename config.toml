@@ -23,8 +23,7 @@ favicon = "favicon.ico"
 
 # Navigation Menu
 menu = [
-    { name = "Home", url = "/", trailing_slash = false },
-    { name = "About", url = "/about/", trailing_slash = true },
+    { name = "William Yoon", url = "/", trailing_slash = false },
     { name = "Projects", url = "/projects/", trailing_slash = true },
     { name = "Research", url = "/research/", trailing_slash = true },
     { name = "Resume", url = "/resume/", trailing_slash = true },
@@ -33,8 +32,8 @@ menu = [
 # Footer socials
 socials = [
     { name = "GitHub", url = "https://github.com/williamyoon2021", icon = "github" },
-    { name = "LinkedIn", url = "https://www.linkedin.com/in/william-yoon-2021/", icon = "linkedin" },
-    { name = "Email", url = "mailto:williamyoon2021@gmail.com", icon = "email" },
+    { name = "LinkedIn", url = "https://www.linkedin.com/in/william-yoon", icon = "linkedin" },
+    { name = "Email", url = "mailto:wty5@cornell.edu", icon = "email" },
 ]
 
 # Security headers

@@ -1,9 +1,8 @@
 {% extends "base.html" %}
-{% import "macros.html" as macros %}
 
-{%- block main_content %}
-<div class="page-content">
-    {{ macros::page_header(title=section.title) }}
-    {{ section.content | safe }}
-</div>
-{%- endblock main_content %} 
+{% block main_content %}
+<article class="content">
+    <h1>{% if section %}{{ section.title }}{% else %}{{ page.title }}{% endif %}</h1>
+    {% if section %}{{ section.content | safe }}{% else %}{{ page.content | safe }}{% endif %}
+</article>
+{% endblock %} 
